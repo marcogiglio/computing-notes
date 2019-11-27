@@ -1,0 +1,8 @@
+# Virtualization
+
+Most of the world digital infrastructure resides on virtualized systems of different kinds. Virtualization is about creating an additional abstraction layer which sits between the running software and the underlying hardware. This abstraction layer can be created for different reasons: for achieving better use rate, better resource management, efficiency of deployment and updating complex infrastructure or even for security. In the following essays, we are going to focus on the most widely adopted technologies and use-cases of the year 2019, with a particular focus on security. There are two broad categories in which we can divide virtualization techniques:
+
+- **Operative System Assisted Virtualization:** hardware resources are virtualized by having multiple separate instances of user spaces via [Containers](https://www.marcogiglio.me/p/7bc88211-6cd6-4848-a968-3383e100206b/www.marcogiglio.me/containers/).
+- **Hypervisor Assisted Virtualization:** hardware resources are virtualized by having multiple separate virtual machine, each running an operative system, via [Hypervisors](https://www.marcogiglio.me/p/7bc88211-6cd6-4848-a968-3383e100206b/www.marcogiglio.me/hypervisors), 
+
+Within those categories, there are other subdivisions and interesting overlaps, to which we will go over in depth in their respective sections. But before getting our hands into  virtualization, we first need to understand the basics of how an operative systems works.
