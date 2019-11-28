@@ -1,10 +1,10 @@
 # Microkernels
 
-Microkernel do not provide high-level abstraction to access devices and file system. They have minimal mechanism to control access to address space, interrupts and processor time.
+Microkernel do not provide high-level abstraction to access devices and file system. They only implement the minimal mechanisms to control access to address space, interrupts and processor time.
+
+One of the most famous and interesting microkernel project is seL4. seL4 aims to achieve the highest guarantees of security without compromising on performance. Those guarantee of security are backed by formal verification proofs of the code, which are mathematical proofs that the code behaves according to a precise specification under certain reasonable assumptions. 
 
 ## seL4
-
-seL4 is an microkernel-based operative system aiming to achieve the highest guarantees of security without compromising on performance. To date, it is the only formally verified operative system in production.  
 
 When seL4 boots it gives the root task (initial user-level process) all the physical resources left. This task then can set up other task and grants rights. Access rights are based on capabilities (unforgeable tokens representing privileges).
 
@@ -20,4 +20,12 @@ The unverified x86 version of seL4 supports VT-d extensions on the experimental 
 
 On x86, seL4 can be configured to support multiple CPUs. Current multicore support is through a multikernel configuration where each booted CPU is given a portion of available memory. Cores can then communicate via limited shared memory and kernel supported IPIs. 
 
-seL4 can be used as an hypervisor.
+seL4 can be used as an hypervisor by using camKEES-VM
+
+### References
+
+
+
+
+
+
